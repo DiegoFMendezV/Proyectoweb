@@ -4,7 +4,7 @@
 @media only screen and (max-width: 500px){/*cuando nos encontramos en un dispositivo por debajo de los 600px haga*/
 
     .navbar{/*cuando tengamos nuestra pantalla menos de 600px cambia de color*/
-        background-color: aqua;
+        background-color: rgb(3, 112, 113);
         height: 80px;
         box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, .42);/*difuminado*/
         align-items: center;
@@ -15,7 +15,7 @@
         flex-direction: column;
         position: absolute;
         top: 60px;
-        background-color: aqua;
+        background-color: rgb(3, 112, 113);
         height: 50vh;
         left: -1em;
         transform: translateY(-120%);

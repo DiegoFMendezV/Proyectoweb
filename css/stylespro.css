@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100;300;500;700;900 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*COLOCAMOS IMAGEN DE FONDO*/
+.prod{
+    width: 100vw;
+    height: 90vh;
+    background-image:url(../img/vector2.jfif);
+    background-size: 100%;
+    max-width: 100%;
+}
+
+.navbarpro{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 30px;
+}
+/*distribuimos horizontalmente el menu*/
+.navbarpro .brandpro{
+    color: rgb(2, 22, 205);
+    margin-top: 10px;
+}
+
+.navbarpro .menu{
+    grid-column: 6/9;
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu li{
+    list-style: none;
+}
+/*ingresamos a nuestros enlaces directamente*/
+.menu li a{
+    text-decoration: none; /*desaparece la linea de por debajo*/
+    margin-right: 3em; /*separacion de los menus*/
+    font-size: 1.3em; /*incrementa el tamaño de la letra*/
+    color: rgb(2, 22, 205); /*color de la letra*/
+    font-weight: 400; /*resalta o negrilla del texto*/
+    padding: 10px 20px;
+}
+
+.menu li a:hover{ /*cuando colocamos el puntero encima cambia de color*/
+    text-decoration: underline;
+}
+
+.menu-bar{
+    display: none;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.tittle{
+    text-align: center;
+    font-size: 80px;
+    font-family: cursive;
+    color: rgb(2, 22, 205);
+    margin-top: 0;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.galeria{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(194, 98%, 35%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: black;
+    font-size: xx-large;
+    font-family: cursive;
+}
+
+.imagen:hover .hover-galeria{
+    transform: scale(1);
+}
+
+#portafolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url(../img/bici.png);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: top;
+    margin-top: 10px;
+}
+
+#a{
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    font-family: cursive;
+}
